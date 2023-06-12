@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://kit.fontawesome.com/66e0b8ffd1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>HTML5 Forms</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card my-5">
+
+            <div class="card-header">
+                <h2>Payment Form Example</h2>
+            </div>
+            <div class="card-body">
+                <!-- Inicio del Form-->
+                <form>
+                    <div class="alert alert-danger" role="alert">
+                        <b>Some Fields are missing</b>
+                    </div>
+                    <!-- primera fila-->
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <label class="form-label">Card#</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXX">
+
+                        </div>
+                        <div class="col-4 mb-3">
+                            <label class="form-label">CVC#</label>
+                            <input type="number" class="form-control" placeholder="0000">
+                        </div>
+                        
+                        <div class="col-4 mb-3 form-check">
+                            <label class="form-label" placeholder="0000">Amount</label>
+                            <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" placeholder="Amount">
+                        </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Firts Name</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                        <div class="col-3 mb-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select">
+                                <option selected>Pick a State</option>
+                                <option value="1">Amazonas</option>
+                                <option value="2">Aragua</option>
+                                <option value="3">Bolivar</option>
+                            </select>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <label class="form-label">Post Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">We accept:</label>
+                            <div class="input-group-text bg-secondary w-50">
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input" type="radio" name="card" value="option1">
+                                    <label class="form-check-label""><i class="fa-brands fa-cc-mastercard"></i></label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="card" value="option2">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="card" value="option2">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="card" value="option2">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                  </div>
+                                </div>
+
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" style="height: 100px"></textarea>
+                            <div class="form-text">Add any notes here.</div>
+
+                        </div>
+                   
+                </div>
+            <!-- fin del row-->
+                    <div class="card-footer text-muted d-flex justify-content-end">
+                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary ms-2">Send</button>
+
+
+                    </div>
+                </form>
+                <!-- fin del form-->
+            </div>
+        </div>
+    </div>
+    <!-- fin del div contenedor-->
+
+    <!-- script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
